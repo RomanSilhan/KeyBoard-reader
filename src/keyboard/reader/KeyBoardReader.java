@@ -18,11 +18,13 @@ public class KeyBoardReader {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in, "CP1250");
-        System.out.println("Inport Keys");
-        int vstup = sc.nextInt();
+
+        int vstup;
         int max = 0;
         int min = 10;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Inport Key");
+            vstup = sc.nextInt();
             if (vstup > max) {
                 max = vstup;
             }
@@ -30,7 +32,7 @@ public class KeyBoardReader {
                 min = vstup;
             }
         }
-        System.out.println("maximum " +max);
-        System.out.println("minimum " +min);
+        System.out.println("maximum " + max);
+        System.out.println("minimum " + min);
     }
 }
